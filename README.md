@@ -82,3 +82,17 @@ Run Docker container:
 ```bash
 docker run -p 5000:5000 mlops-nlp-api
 ```
+
+## Deployment Status
+
+The Flask API was successfully deployed on a Linux VM using Docker.
+
+Example prediction:
+
+```json
+{
+  "cleaned_text": "i love this project",
+  "confidence": 0.879081666469574,
+  "prediction": "positive",
+  "text": "I love this project"
+}
