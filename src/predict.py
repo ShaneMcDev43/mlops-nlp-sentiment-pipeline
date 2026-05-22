@@ -7,7 +7,7 @@ from src.preprocess import clean_text
 
 
 MAX_LEN = 50
-MODEL_PATH = "sentiment_model.keras"
+MODEL_PATH = "sentiment_model.h5"
 TOKENIZER_PATH = "models/tokenizer.pkl"
 
 
