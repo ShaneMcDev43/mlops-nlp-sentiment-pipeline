@@ -4,6 +4,12 @@
 
 This project demonstrates an end-to-end MLOps pipeline for sentiment analysis using a Bidirectional LSTM model.
 
+## Model Artefact Note
+
+The trained `.keras` model file is not stored directly in this GitHub repository because it exceeds GitHub's standard upload size limit. The model is generated using `src/train.py` and can be downloaded or transferred to the deployment server separately.
+
+This reflects a common MLOps practice where large model artefacts are stored separately from source code.
+
 ## Features
 
 - Text preprocessing
