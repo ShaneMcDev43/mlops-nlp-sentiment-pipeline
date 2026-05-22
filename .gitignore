@@ -221,3 +221,6 @@ __marimo__/
 #This prevents GitHub trying to upload large models
 *.keras
 *.h5
+
+__pycache__/
+.pytest_cache/
