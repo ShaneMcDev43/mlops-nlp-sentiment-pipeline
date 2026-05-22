@@ -10,12 +10,12 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    from src.predict import predict_sentiment
-
     data = request.get_json()
 
     if not data or "text" not in data:
         return jsonify({"error": "Please provide text input"}), 400
+
+    from src.predict import predict_sentiment
 
     result = predict_sentiment(data["text"])
     return jsonify(result)
