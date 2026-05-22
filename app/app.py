@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from src.predict import predict_sentiment
 
 app = Flask(__name__)
 
@@ -11,6 +10,8 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
+    from src.predict import predict_sentiment
+
     data = request.get_json()
 
     if not data or "text" not in data:

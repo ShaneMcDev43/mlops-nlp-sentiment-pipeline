@@ -7,7 +7,7 @@ def test_home_route():
     assert response.status_code == 200
 
 
-def test_predict_route_missing_text():
+def test_predict_missing_text():
     client = app.test_client()
     response = client.post("/predict", json={})
     assert response.status_code == 400
