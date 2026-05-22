@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+#This prevents GitHub trying to upload large models
+*.keras
+*.h5
